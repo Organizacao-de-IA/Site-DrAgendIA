@@ -47,7 +47,7 @@ export const Benefits = () => {
         <div className="text-center mb-20">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
             Por que ConsulBot é a 
-            <span className="bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent">revolução médica</span> que você esperava?
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">revolução médica</span> que você esperava?
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             A primeira inteligência artificial brasileira especializada em comunicação médica, 
@@ -66,10 +66,10 @@ export const Benefits = () => {
                 {/* Ícone e métrica */}
                 <div className="flex-shrink-0">
                   <div className="relative">
-                    <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/20">
+                    <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/30">
                       <Icon className="w-12 h-12 text-primary" />
                     </div>
-                    <div className="absolute -top-3 -right-3 bg-gradient-to-r from-primary to-purple-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                    <div className="absolute -top-3 -right-3 bg-gradient-to-r from-accent to-yellow-400 text-foreground px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       {benefit.metric}
                     </div>
                   </div>

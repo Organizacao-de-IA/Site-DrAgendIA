@@ -27,7 +27,7 @@ export const Header = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled 
-          ? "bg-slate-900/95 backdrop-blur-xl border-b border-slate-800 shadow-xl" 
+          ? "bg-background/95 backdrop-blur-xl border-b border-border shadow-lg" 
           : "bg-transparent"
       )}
     >
@@ -38,24 +38,24 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => scrollToSection("benefits")}
-              className="text-gray-300 hover:text-white transition-colors relative group"
+              className="text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               Benefícios
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection("how-it-works")}
-              className="text-gray-300 hover:text-white transition-colors relative group"
+              className="text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               Como Funciona
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection("differentials")}
-              className="text-gray-300 hover:text-white transition-colors relative group"
+              className="text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               Diferenciais
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
             </button>
           </nav>
 
