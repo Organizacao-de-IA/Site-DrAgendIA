@@ -11,22 +11,22 @@ export const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Nunca mais perca um 
-                <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent"> agendamento</span>
+                Revolucione seu consultório com 
+                <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">IA Médica</span> especializada
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Nossa IA atende seus pacientes 24/7 no WhatsApp, agenda automaticamente 
-                e reduz faltas em até 70%. Integração direta com sua agenda médica.
+                ConsulBot é a primeira IA brasileira treinada especificamente para comunicação médica. 
+                Gerencie agendamentos, lembretes e atendimento inicial com linguagem empática e profissional.
               </p>
             </div>
 
             {/* Benefits List */}
             <div className="space-y-3">
               {[
-                "Redução de 70% nas faltas aos consultórios",
-                "Atendimento automatizado 24 horas por dia",
-                "Integração com sua agenda atual",
-                "IA com atendimento humanizado"
+                "Primeira IA com CRM médico exclusivo no Brasil",
+                "Linguagem médica certificada por especialistas",
+                "Conformidade total com CFM e LGPD médica",
+                "Integração nativa com softwares hospitalares"
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-success flex-shrink-0" />
@@ -40,17 +40,17 @@ export const Hero = () => {
               <WhatsAppButton 
                 variant="cta" 
                 size="xl"
-                message="Olá! Quero saber mais sobre como automatizar meu consultório com IA"
+                message="Olá! Quero conhecer o ConsulBot e como pode revolucionar meu consultório"
               >
-                Solicite uma demonstração gratuita
+                Teste ConsulBot gratuitamente
               </WhatsAppButton>
               
               <WhatsAppButton 
                 variant="hero" 
                 size="xl"
-                message="Olá! Gostaria de ver como funciona o agente de IA para médicos"
+                message="Gostaria de ver uma demonstração da IA médica ConsulBot"
               >
-                Ver como funciona
+                Ver demonstração completa
               </WhatsAppButton>
             </div>
 
@@ -58,15 +58,15 @@ export const Hero = () => {
             <div className="flex items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <Bot className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">IA Avançada</span>
+                <span className="text-sm text-muted-foreground">IA Certificada CFM</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">Integração Total</span>
+                <span className="text-sm text-muted-foreground">CRM Médico Integrado</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageSquare className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">WhatsApp Nativo</span>
+                <span className="text-sm text-muted-foreground">Comunicação Humanizada</span>
               </div>
             </div>
           </div>
@@ -84,10 +84,10 @@ export const Hero = () => {
             
             {/* Floating elements */}
             <div className="absolute -top-4 -right-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-              70% menos faltas
+              CFM Certificado
             </div>
             <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-              24/7 ativo
+              IA Médica Exclusiva
             </div>
           </div>
         </div>

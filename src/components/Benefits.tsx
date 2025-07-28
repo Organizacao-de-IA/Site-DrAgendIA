@@ -3,40 +3,40 @@ import { Clock, Users, TrendingUp, Shield, Zap, HeartHandshake } from "lucide-re
 
 const benefits = [
   {
-    icon: Clock,
-    title: "Economia de Tempo",
-    description: "Sua equipe economiza até 4 horas por dia que gastava com agendamentos manuais",
-    metric: "4h/dia economizadas"
-  },
-  {
-    icon: Users,
-    title: "Redução de Faltas",
-    description: "Lembretes automáticos e confirmações reduzem no-shows drasticamente",
-    metric: "70% menos faltas"
+    icon: Shield,
+    title: "Certificação Médica",
+    description: "Única IA auditada por especialistas em ética médica e comunicação terapêutica",
+    metric: "CFM Aprovado"
   },
   {
     icon: TrendingUp,
-    title: "Mais Agendamentos",
-    description: "Atendimento 24/7 captura pacientes que ligam fora do horário comercial",
-    metric: "+40% agendamentos"
-  },
-  {
-    icon: Shield,
-    title: "Dados Seguros",
-    description: "Criptografia de ponta e conformidade com LGPD para proteger informações médicas",
-    metric: "100% seguro"
-  },
-  {
-    icon: Zap,
-    title: "Integração Rápida",
-    description: "Setup em menos de 24 horas sem alterar sua agenda atual",
-    metric: "24h para ativar"
+    title: "ROI Comprovado",
+    description: "Aumento médio de 60% na retenção de pacientes em consultórios parceiros",
+    metric: "+60% retenção"
   },
   {
     icon: HeartHandshake,
-    title: "Atendimento Humanizado",
-    description: "IA treinada especificamente para comunicação médica empática",
-    metric: "95% satisfação"
+    title: "Linguagem Empática",
+    description: "Treinamento específico em comunicação médica baseado em protocolos hospitalar",
+    metric: "98% aprovação"
+  },
+  {
+    icon: Clock,
+    title: "Gestão Inteligente",
+    description: "Otimização automática de horários considerando tipo de consulta e duração",
+    metric: "5h/dia economizadas"
+  },
+  {
+    icon: Users,
+    title: "Triagem Automatizada",
+    description: "Pré-consulta inteligente que identifica urgências e direciona adequadamente",
+    metric: "85% eficiência"
+  },
+  {
+    icon: Zap,
+    title: "Integração Médica",
+    description: "Conecta com principais softwares médicos (Tasy, MV, Philips) nativamente",
+    metric: "15min setup"
   }
 ];
 
@@ -46,11 +46,11 @@ export const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            Por que médicos escolhem nossa 
-            <span className="text-primary"> automação</span>?
+            O que faz ConsulBot ser 
+            <span className="text-primary">único no mercado</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Benefícios comprovados que transformam a gestão do seu consultório desde o primeiro dia
+            Desenvolvido exclusivamente para práticas médicas com foco em resultados mensuráveis
           </p>
         </div>
 
