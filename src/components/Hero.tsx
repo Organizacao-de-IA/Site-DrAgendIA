@@ -4,19 +4,23 @@ import heroDemo from "@/assets/hero-demo.jpg";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-primary/10 flex items-center">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-800 flex items-center relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(124,58,237,0.1),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+      
+      <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Revolucione seu consultório com 
-                <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">IA Médica</span> especializada
+              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                Transforme consultas médicas com 
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Inteligência Artificial</span> humanizada
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                ConsulBot é a primeira IA brasileira treinada especificamente para comunicação médica. 
-                Gerencie agendamentos, lembretes e atendimento inicial com linguagem empática e profissional.
+              <p className="text-xl text-gray-300 leading-relaxed">
+                ConsulBot revoluciona a gestão médica com IA especializada em comunicação terapêutica, 
+                otimizando agendamentos e criando conexões humanas autênticas com seus pacientes.
               </p>
             </div>
 
@@ -29,8 +33,8 @@ export const Hero = () => {
                 "Integração nativa com softwares hospitalares"
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-success flex-shrink-0" />
-                  <span className="text-foreground">{benefit}</span>
+                  <CheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                  <span className="text-gray-200">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -57,16 +61,16 @@ export const Hero = () => {
             {/* Trust indicators */}
             <div className="flex items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
-                <Bot className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">IA Certificada CFM</span>
+                <Bot className="w-5 h-5 text-purple-400" />
+                <span className="text-sm text-gray-400">IA Certificada CFM</span>
               </div>
               <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">CRM Médico Integrado</span>
+                <Calendar className="w-5 h-5 text-purple-400" />
+                <span className="text-sm text-gray-400">CRM Médico Integrado</span>
               </div>
               <div className="flex items-center gap-2">
-                <MessageSquare className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">Comunicação Humanizada</span>
+                <MessageSquare className="w-5 h-5 text-purple-400" />
+                <span className="text-sm text-gray-400">Comunicação Humanizada</span>
               </div>
             </div>
           </div>

@@ -42,43 +42,49 @@ const benefits = [
 
 export const Benefits = () => {
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            O que faz ConsulBot ser 
-            <span className="text-primary">único no mercado</span>?
+            Por que ConsulBot é a 
+            <span className="bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent">revolução médica</span> que você esperava?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Desenvolvido exclusivamente para práticas médicas com foco em resultados mensuráveis
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            A primeira inteligência artificial brasileira especializada em comunicação médica, 
+            desenvolvida com tecnologia de ponta e validação científica
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Layout alternativo - Lista com separadores */}
+        <div className="max-w-5xl mx-auto space-y-16">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
+            const isEven = index % 2 === 0;
+            
             return (
-              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 bg-card/80 backdrop-blur-sm">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-primary" />
+              <div key={index} className={`flex items-center gap-12 ${isEven ? 'flex-row' : 'flex-row-reverse'} max-lg:flex-col max-lg:text-center`}>
+                {/* Ícone e métrica */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-primary/20">
+                      <Icon className="w-12 h-12 text-primary" />
                     </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-bold text-primary">{benefit.metric}</div>
+                    <div className="absolute -top-3 -right-3 bg-gradient-to-r from-primary to-purple-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      {benefit.metric}
                     </div>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {benefit.description}
-                    </p>
                   </div>
                 </div>
-              </Card>
+                
+                {/* Conteúdo */}
+                <div className={`flex-1 ${isEven ? 'text-left' : 'text-right'} max-lg:text-center`}>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto">
+                    {benefit.description}
+                  </p>
+                </div>
+              </div>
             );
           })}
         </div>
