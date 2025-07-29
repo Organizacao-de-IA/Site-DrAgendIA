@@ -11,7 +11,7 @@ const differentials = [
   {
     icon: Calendar,
     title: "Integração Total",
-    description: "Conecta com Google Calendar, Outlook, Doctoralia e principais agendas médicas",
+    description: "Conecta com Google Calendar e principais agendas médicas",
     highlight: "Sua agenda atual"
   },
   {

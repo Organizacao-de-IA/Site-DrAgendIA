@@ -22,7 +22,7 @@ export const FinalCTA = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
               { text: "70% menos faltas", subtext: "Comprovado" },
-              { text: "24h para ativar", subtext: "Setup rápido" },
+              { text: "Implementação personalizada", subtext: "Entendemos seu processo" },
               { text: "Demonstração gratuita", subtext: "Sem compromisso" }
             ].map((item, index) => (
               <div key={index} className="flex flex-col items-center">
@@ -45,7 +45,7 @@ export const FinalCTA = () => {
             </WhatsAppButton>
 
             {/* Alternative CTA */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <p className="text-muted-foreground mb-4">Ou prefere ver uma demonstração primeiro?</p>
               <WhatsAppButton 
                 variant="hero" 
@@ -54,11 +54,11 @@ export const FinalCTA = () => {
               >
                 Solicite uma demonstração gratuita
               </WhatsAppButton>
-            </div>
+            </div> */}
           </div>
 
           {/* Urgency */}
-          <div className="mt-12 p-6 bg-card/60 backdrop-blur-sm rounded-2xl border border-primary/20">
+          {/* <div className="mt-12 p-6 bg-card/60 backdrop-blur-sm rounded-2xl border border-primary/20">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Clock className="w-5 h-5 text-primary" />
               <span className="font-semibold text-foreground">Oferta limitada</span>
@@ -67,12 +67,12 @@ export const FinalCTA = () => {
               Implementação gratuita para os primeiros 50 médicos este mês. 
               <span className="text-primary font-medium"> Vagas limitadas!</span>
             </p>
-          </div>
+          </div> */}
 
           {/* Trust indicators */}
           <div className="mt-8 text-center">
             <p className="text-sm text-muted-foreground">
-              ✓ Sem taxas de setup ✓ Suporte especializado ✓ Integração garantida ✓ LGPD compliant
+              ✓ Suporte especializado ✓ Integração garantida ✓ LGPD compliant
             </p>
           </div>
         </div>

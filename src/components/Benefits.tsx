@@ -4,41 +4,42 @@ import { Clock, Users, TrendingUp, Shield, Zap, HeartHandshake } from "lucide-re
 const benefits = [
   {
     icon: Shield,
-    title: "Certificação Médica",
-    description: "Única IA auditada por especialistas em ética médica e comunicação terapêutica",
-    metric: "CFM Aprovado"
-  },
-  {
-    icon: TrendingUp,
-    title: "ROI Comprovado",
-    description: "Aumento médio de 60% na retenção de pacientes em consultórios parceiros",
-    metric: "+60% retenção"
-  },
-  {
-    icon: HeartHandshake,
-    title: "Linguagem Empática",
-    description: "Treinamento específico em comunicação médica baseado em protocolos hospitalar",
-    metric: "98% aprovação"
-  },
-  {
-    icon: Clock,
-    title: "Gestão Inteligente",
-    description: "Otimização automática de horários considerando tipo de consulta e duração",
-    metric: "5h/dia economizadas"
-  },
-  {
-    icon: Users,
-    title: "Triagem Automatizada",
-    description: "Pré-consulta inteligente que identifica urgências e direciona adequadamente",
-    metric: "85% eficiência"
+    title: "Atendimento Automatizado",
+    description: "Respostas automáticas via WhatsApp, 24/7, com linguagem clara e acolhedora.",
+    metric: "Sem falhas humanas"
   },
   {
     icon: Zap,
-    title: "Integração Médica",
-    description: "Conecta com principais softwares médicos (Tasy, MV, Philips) nativamente",
-    metric: "15min setup"
+    title: "Agendamento Integrado",
+    description: "Envio automático de agendamentos diretamente a agenda integrada.",
+    metric: "100% compatível"
+  },
+  {
+    icon: TrendingUp,
+    title: "Mais Conversões",
+    description: "IA que responde rápido e transforma conversas em agendamentos reais.",
+    metric: "Menos perdas"
+  },
+  {
+    icon: Clock,
+    title: "Economia de Tempo",
+    description: "Automatize tarefas repetitivas e libere sua equipe para focar no que importa.",
+    metric: "Até 5h/dia"
+  },
+  {
+    icon: Users,
+    title: "Pré-atendimento Inteligente",
+    description: "Coleta de dados do paciente antes da consulta, sem sobrecarregar o time.",
+    metric: "Menos retrabalho"
+  },
+  {
+    icon: HeartHandshake,
+    title: "Implantação Personalizada",
+    description: "Entendemos o seu processo e implementamos para a IA para sua realidade",
+    metric: "Otimização"
   }
 ];
+
 
 export const Benefits = () => {
   return (
@@ -50,12 +51,12 @@ export const Benefits = () => {
       
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+          {/* <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Shield className="w-4 h-4" />
             Tecnologia Certificada CFM
-          </div>
+          </div> */}
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Por que ConsulBot é a{" "}
+            Por que DrAgendia é a{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 revolução médica
@@ -65,8 +66,7 @@ export const Benefits = () => {
             que você esperava?
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A primeira inteligência artificial brasileira especializada em comunicação médica, 
-            desenvolvida com tecnologia de ponta e validação científica
+          Mais agendamentos, menos tarefas manuais. Uma IA que cuida do atendimento para sua equipe focar no que importa.
           </p>
         </div>
 

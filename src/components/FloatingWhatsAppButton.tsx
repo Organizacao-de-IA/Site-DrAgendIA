@@ -33,7 +33,7 @@ export const FloatingWhatsAppButton = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Olá! Vi seu site e gostaria de automatizar meu consultório com IA. Podem me ajudar?");
-    const phoneNumber = "5511999999999";
+    const phoneNumber = "551195400056";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };

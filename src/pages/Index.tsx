@@ -18,9 +18,9 @@ const Index = () => {
       <section id="how-it-works">
         <HowItWorks />
       </section>
-      <section id="differentials">
+      {/* <section id="differentials">
         <Differentials />
-      </section>
+      </section> */}
       <SocialProof />
       <FinalCTA />
       <FloatingWhatsAppButton />

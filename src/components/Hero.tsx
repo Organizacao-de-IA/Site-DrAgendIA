@@ -1,6 +1,6 @@
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CheckCircle, Bot, Calendar, MessageSquare } from "lucide-react";
-import heroDemo from "@/assets/hero-demo.jpg";
+import heroDemo from "@/assets/hero-demo.png";
 
 export const Hero = () => {
   return (
@@ -16,21 +16,20 @@ export const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
                 Revolucione a medicina com 
-                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Inteligência Artificial</span> especializada
+                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"> Inteligência Artificial</span> especializada
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                ConsulBot é a primeira IA brasileira certificada para comunicação médica, 
-                otimizando consultas e criando conexões humanas autênticas com pacientes.
+              Dr AgendIA é uma inteligência artificial projetada para clínicas e consultórios, trazendo mais eficiência, organização e humanização ao atendimento médico.
               </p>
             </div>
 
             {/* Benefits List */}
             <div className="space-y-3">
               {[
-                "Primeira IA com CRM médico exclusivo no Brasil",
-                "Linguagem médica certificada por especialistas",
-                "Conformidade total com CFM e LGPD médica",
-                "Integração nativa com softwares hospitalares"
+                "Desenvolvido com foco em fluxos reais de atendimento médico",
+                "Linguagem otimizada com base em conversas reais e revisão de profissionais da saúde",
+                "Alinhado às diretrizes da LGPD para proteger dados sensíveis",
+                "Agendamento automático com plataformas compatíveis"
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -62,11 +61,11 @@ export const Hero = () => {
             <div className="flex items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <Bot className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">IA Certificada CFM</span>
+                <span className="text-sm text-muted-foreground">IA com foco médico</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-secondary" />
-                <span className="text-sm text-muted-foreground">CRM Médico Integrado</span>
+                <span className="text-sm text-muted-foreground">Gestão integrada</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageSquare className="w-5 h-5 text-accent" />
@@ -88,11 +87,11 @@ export const Hero = () => {
             
             {/* Floating elements */}
             <div className="absolute -top-4 -right-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-              CFM Certificado
+              Alto volume de agendamentos
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            {/* <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               IA Médica Exclusiva
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

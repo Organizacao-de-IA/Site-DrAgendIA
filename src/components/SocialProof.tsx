@@ -70,7 +70,7 @@ export const SocialProof = () => {
             </div>
 
             {/* Testimonial */}
-            <Card className="p-6 bg-primary/5 border-primary/20">
+            {/* <Card className="p-6 bg-primary/5 border-primary/20">
               <div className="flex items-center gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-primary text-primary" />
@@ -83,7 +83,7 @@ export const SocialProof = () => {
               <cite className="text-muted-foreground font-medium">
                 Dr. Roberto Silva - Cardiologista
               </cite>
-            </Card>
+            </Card> */}
 
             {/* CTA */}
             <div className="pt-4">

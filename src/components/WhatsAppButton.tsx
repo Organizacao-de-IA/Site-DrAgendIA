@@ -11,7 +11,7 @@ interface WhatsAppButtonProps {
 
 export const WhatsAppButton = ({ 
   message = "Olá! Gostaria de saber mais sobre a automação médica com IA.", 
-  phoneNumber = "5511999999999",
+  phoneNumber = "551195400056",
   variant = "whatsapp",
   size = "lg",
   children 
