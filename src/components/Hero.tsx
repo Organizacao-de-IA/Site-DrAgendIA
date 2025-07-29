@@ -43,15 +43,15 @@ export const Hero = () => {
               <WhatsAppButton 
                 variant="cta" 
                 size="xl"
-                message="Olá! Quero conhecer o ConsulBot e como pode revolucionar meu consultório"
+                message="Olá! Quero conhecer o DrAgendia e como pode revolucionar meu consultório"
               >
-                Teste ConsulBot gratuitamente
+                Teste DrAgendia gratuitamente
               </WhatsAppButton>
               
               <WhatsAppButton 
                 variant="hero" 
                 size="xl"
-                message="Gostaria de ver uma demonstração da IA médica ConsulBot"
+                message="Gostaria de ver uma demonstração da IA médica DrAgendia"
               >
                 Ver demonstração completa
               </WhatsAppButton>

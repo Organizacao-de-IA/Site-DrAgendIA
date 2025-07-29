@@ -51,10 +51,10 @@ export const Header = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
             </button>
             <button 
-              onClick={() => scrollToSection("differentials")}
+              onClick={() => scrollToSection("socialProof")}
               className="text-muted-foreground hover:text-foreground transition-colors relative group"
             >
-              Diferenciais
+              Funcionamento
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
             </button>
           </nav>

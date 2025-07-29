@@ -18,10 +18,13 @@ const Index = () => {
       <section id="how-it-works">
         <HowItWorks />
       </section>
+      <section id="socialProof">
+        <SocialProof />
+      </section>
       {/* <section id="differentials">
         <Differentials />
       </section> */}
-      <SocialProof />
+      
       <FinalCTA />
       <FloatingWhatsAppButton />
     </div>
