@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import logoAgendia from "@/assets/dragendia-logo.png";
 
 interface LogoProps {
   variant?: "default" | "horizontal";
@@ -11,7 +12,7 @@ export const Logo = ({ variant = "default", className }: LogoProps) => {
       <div className={cn("flex items-center gap-3", className)}>
         <div className="relative">
           <img 
-            src="/lovable-uploads/79145921-e419-4a92-a48a-ec9f2cca5f23.png" 
+            src={logoAgendia} 
             alt="DrAgendia Logo" 
             className="w-10 h-10 object-contain"
           />
