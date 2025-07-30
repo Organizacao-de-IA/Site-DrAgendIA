@@ -9,7 +9,7 @@ export const SocialProof = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            Veja nossa IA em 
+            Veja nossa IA em
             <span className="text-primary"> ação</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -21,13 +21,13 @@ export const SocialProof = () => {
           {/* Video Demo */}
           <div className="relative group cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={demoThumbnail} 
+              <img
+                src={demoThumbnail}
                 alt="Demonstração do agente de IA funcionando no WhatsApp"
                 className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-              
+
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-20 h-20 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
@@ -35,7 +35,7 @@ export const SocialProof = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Demo label */}
             <div className="absolute -top-4 -left-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               Demo real
@@ -49,7 +49,7 @@ export const SocialProof = () => {
                 Veja como funciona na prática
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Esta demonstração mostra uma conversa real entre um paciente e nossa IA. 
+                Esta demonstração mostra uma conversa real entre um paciente e nossa IA.
                 Veja como o agendamento acontece de forma natural e eficiente.
               </p>
             </div>
@@ -87,13 +87,16 @@ export const SocialProof = () => {
 
             {/* CTA */}
             <div className="pt-4">
-              <WhatsAppButton 
-                variant="cta" 
-                size="xl"
-                message="Olá! Vi a demonstração e quero implementar essa automação no meu consultório"
-              >
-                Automatize seu consultório agora!
-              </WhatsAppButton>
+              <div className="w-full sm:w-fit">
+                <WhatsAppButton
+                  variant="cta"
+                  size="xl"
+                  message="Olá! Vi a demonstração e quero implementar essa automação no meu consultório"
+                >
+                  Automatize seu consultório agora!
+                </WhatsAppButton>
+              </div>
+
               <p className="text-sm text-muted-foreground mt-3">
                 Demonstração gratuita • Setup em 24h • Sem compromisso
               </p>
