@@ -28,7 +28,7 @@ export const WhatsAppButton = ({
       variant={variant} 
       size={size} 
       onClick={handleClick}
-      className="group"
+      className="group w-full sm:w-auto"
     >
       <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
       {children}
