@@ -78,17 +78,19 @@ export const SocialProof = () => {
 
             {/* CTA */}
             <div className="pt-4">
-              <div className="w-full sm:w-fit">
-                <WhatsAppButton
-                  variant="cta"
-                  size="xl"
-                  message="Olá! Vi a demonstração e quero implementar essa automação no meu consultório"
-                >
-                  Automatize seu consultório agora!
-                </WhatsAppButton>
+              <div className="flex justify-center sm:justify-start w-full px-4 sm:px-0">
+                <div className="w-full sm:w-fit">
+                  <WhatsAppButton
+                    variant="cta"
+                    size="xl"
+                    message="Olá! Vi a demonstração e quero implementar essa automação no meu consultório"
+                  >
+                    Automatize seu consultório agora!
+                  </WhatsAppButton>
+                </div>
               </div>
 
-              <p className="text-sm text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3 text-center sm:text-left">
                 Demonstração gratuita • Setup em 24h • Sem compromisso
               </p>
             </div>
