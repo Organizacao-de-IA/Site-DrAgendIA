@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import logoAgendia from "@/assets/dragendia-logo.png";
+import logoAgendIA from "@/assets/dragendia-logo.png";
 
 interface LogoProps {
   variant?: "default" | "horizontal";
@@ -11,15 +11,15 @@ export const Logo = ({ variant = "default", className }: LogoProps) => {
     return (
       <div className={cn("flex items-center gap-3", className)}>
         <div className="relative">
-          <img 
-            src={logoAgendia} 
-            alt="DrAgendia Logo" 
+          <img
+            src={logoAgendIA}
+            alt="DrAgendIA Logo"
             className="w-10 h-10 object-contain"
           />
         </div>
         <div className="flex flex-col">
           <span className="text-xl font-bold text-foreground">
-            Dr<span className="text-primary">Agendia</span>
+            Dr<span className="text-primary">AgendIA</span>
           </span>
           <span className="text-xs text-muted-foreground -mt-1">
             IA para Consultórios
@@ -32,15 +32,15 @@ export const Logo = ({ variant = "default", className }: LogoProps) => {
   return (
     <div className={cn("flex flex-col items-center gap-2", className)}>
       <div className="relative">
-        <img 
-          src="/lovable-uploads/79145921-e419-4a92-a48a-ec9f2cca5f23.png" 
-          alt="DrAgendia Logo" 
+        <img
+          src="/lovable-uploads/79145921-e419-4a92-a48a-ec9f2cca5f23.png"
+          alt="DrAgendIA Logo"
           className="w-16 h-16 object-contain"
         />
       </div>
       <div className="text-center">
         <div className="text-2xl font-bold text-foreground">
-          Dr<span className="text-primary">Agendia</span>
+          Dr<span className="text-primary">AgendIA</span>
         </div>
         <div className="text-sm text-muted-foreground">
           IA para Consultórios

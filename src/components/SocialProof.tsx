@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Play, Star } from "lucide-react";
-import demoThumbnail from "@/assets/demo-video-thumbnail.jpg";
 
 export const SocialProof = () => {
   return (
@@ -13,32 +12,24 @@ export const SocialProof = () => {
             <span className="text-primary"> ação</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Demonstração real de como nossa IA agenda consultas automaticamente via WhatsApp
+            Demonstração real de como nossa IA agenda consultas automaticamente
+            via WhatsApp
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Video Demo */}
-          <div className="relative group cursor-pointer">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={demoThumbnail}
-                alt="Demonstração do agente de IA funcionando no WhatsApp"
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-
-              {/* Play button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                  <Play className="w-8 h-8 ml-1" />
-                </div>
-              </div>
-            </div>
-
-            {/* Demo label */}
-            <div className="absolute -top-4 -left-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-              Demo real
+          <div className="flex justify-center">
+            <div className="max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
+              <video
+                className="w-full h-full object-contain rounded-3xl"
+                autoPlay
+                loop
+                muted
+                controls
+              >
+                <source src="/demo.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
 
@@ -49,8 +40,9 @@ export const SocialProof = () => {
                 Veja como funciona na prática
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Esta demonstração mostra uma conversa real entre um paciente e nossa IA.
-                Veja como o agendamento acontece de forma natural e eficiente.
+                Esta demonstração mostra uma conversa real entre um paciente e
+                nossa IA. Veja como o agendamento acontece de forma natural e
+                eficiente.
               </p>
             </div>
 
@@ -60,7 +52,7 @@ export const SocialProof = () => {
                 "Conversa 100% natural e humanizada",
                 "Integração em tempo real com a agenda",
                 "Confirmação automática do agendamento",
-                "Envio de lembretes personalizados"
+                "Envio de lembretes personalizados",
               ].map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
