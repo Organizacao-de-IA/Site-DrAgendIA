@@ -23,7 +23,6 @@ export const SocialProof = () => {
             <div className="max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
               <video
                 className="w-full h-full object-contain rounded-3xl"
-                autoPlay
                 loop
                 muted
                 controls

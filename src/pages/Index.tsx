@@ -12,14 +12,14 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <section id="socialProof">
+        <SocialProof />
+      </section>
       <section id="benefits">
         <Benefits />
       </section>
       <section id="how-it-works">
         <HowItWorks />
-      </section>
-      <section id="socialProof">
-        <SocialProof />
       </section>
       {/* <section id="differentials">
         <Differentials />
