@@ -27,7 +27,7 @@ export const Header = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled 
-          ? "bg-background/95 backdrop-blur-xl border-b border-border shadow-lg" 
+          ? "bg-white/95 backdrop-blur-xl border-b border-border shadow-lg" 
           : "bg-transparent"
       )}
     >
@@ -38,24 +38,39 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => scrollToSection("benefits")}
-              className="text-muted-foreground hover:text-foreground transition-colors relative group"
+              className={cn(
+                "transition-colors relative group font-medium",
+                isScrolled 
+                  ? "text-muted-foreground hover:text-foreground" 
+                  : "text-white/90 hover:text-white"
+              )}
             >
               Benefícios
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-secondary transition-all group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection("how-it-works")}
-              className="text-muted-foreground hover:text-foreground transition-colors relative group"
+              className={cn(
+                "transition-colors relative group font-medium",
+                isScrolled 
+                  ? "text-muted-foreground hover:text-foreground" 
+                  : "text-white/90 hover:text-white"
+              )}
             >
               Como Funciona
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-secondary transition-all group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection("socialProof")}
-              className="text-muted-foreground hover:text-foreground transition-colors relative group"
+              className={cn(
+                "transition-colors relative group font-medium",
+                isScrolled 
+                  ? "text-muted-foreground hover:text-foreground" 
+                  : "text-white/90 hover:text-white"
+              )}
             >
               Funcionamento
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-secondary transition-all group-hover:w-full"></span>
             </button>
           </nav>
 

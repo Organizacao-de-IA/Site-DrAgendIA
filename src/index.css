@@ -8,45 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 200 15% 25%;
+    /* Dr. Agendia Instagram-inspired theme */
+    --background: 248 250 252; /* Very light blue-tinted background */
+    --foreground: 15 23 42; /* Dark navy for text */
 
-    --card: 210 100% 99%;
-    --card-foreground: 200 15% 25%;
+    --card: 255 255 255; /* Pure white for cards */
+    --card-foreground: 15 23 42; /* Dark text on cards */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 200 15% 25%;
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
 
-    --primary: 195 100% 34%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 194 36% 52%;
+    /* Primary - Deep navy blue like Instagram posts */
+    --primary: 30 58 138; /* Deep navy blue */
+    --primary-foreground: 248 250 252; /* Light text on primary */
+    --primary-glow: 59 130 246; /* Bright blue for accents */
 
-    --secondary: 194 19% 50%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Bright blue */
+    --secondary: 59 130 246; /* Bright blue */
+    --secondary-foreground: 255 255 255; /* White text on secondary */
 
-    --muted: 40 20% 97%;
-    --muted-foreground: 200 10% 45%;
+    --muted: 241 245 249; /* Light blue-gray */
+    --muted-foreground: 71 85 105; /* Medium gray text */
 
-    --accent: 45 100% 51%;
-    --accent-foreground: 200 15% 25%;
+    /* Accent - Cyan blue like Instagram highlights */
+    --accent: 6 182 212; /* Cyan blue */
+    --accent-foreground: 255 255 255; /* White text on accent */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 239 68 68; /* Red for errors */
+    --destructive-foreground: 248 250 252; /* Light text */
 
-    --border: 194 36% 52%;
-    --input: 40 20% 97%;
-    --ring: 195 100% 34%;
+    --border: 226 232 240; /* Light border */
+    --input: 226 232 240; /* Input border */
+    --ring: 30 58 138; /* Focus ring - matches primary */
 
-    --success: 142 71% 45%;
-    --success-foreground: 210 40% 98%;
+    --success: 34 197 94; /* Green for success */
+    --success-foreground: 255 255 255; /* White text */
 
-    --whatsapp: 142 70% 49%;
-    --whatsapp-foreground: 210 40% 98%;
+    --whatsapp: 37 211 102; /* WhatsApp green */
+    --whatsapp-foreground: 255 255 255;
 
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--accent)), hsl(45 100% 60%));
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
-    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.3);
+    /* Dr. Agendia gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(30 58 138), hsl(59 130 246), hsl(6 182 212));
+    --gradient-cta: linear-gradient(135deg, hsl(6 182 212), hsl(59 130 246));
+    --shadow-elegant: 0 10px 30px -10px hsl(30 58 138 / 0.3);
+    --shadow-glow: 0 0 40px hsl(59 130 246 / 0.4);
 
     --radius: 0.75rem;
 
