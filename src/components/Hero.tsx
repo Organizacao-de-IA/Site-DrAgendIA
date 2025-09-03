@@ -5,9 +5,10 @@ import heroDemo from "@/assets/hero-demo.png";
 export const Hero = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-primary via-secondary to-accent flex items-center relative overflow-hidden">
-      {/* Background pattern with Dr. Agendia style */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.2),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(6,182,212,0.15),transparent_50%)]"></div>
+      {/* Background pattern - Instagram style clean */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(14,165,233,0.15),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(37,99,235,0.1),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(255,255,255,0.05)_50%,transparent_70%)]"></div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -47,22 +48,22 @@ export const Hero = () => {
               ))}
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - Otimizado para conversão */}
             <div className="flex flex-col sm:flex-row gap-4">
               <WhatsAppButton
                 variant="cta"
                 size="xl"
-                message="Olá! Quero conhecer o DrAgendIA e como pode revolucionar meu consultório"
+                message="🏥 Olá! Quero conhecer o Dr.AgendIA e revolucionar meu consultório com IA"
               >
-                Teste DrAgendIA gratuitamente
+                🚀 TESTE GRÁTIS AGORA
               </WhatsAppButton>
 
               <WhatsAppButton
                 variant="hero"
-                size="xl"
-                message="Gostaria de ver uma demonstração da IA médica DrAgendIA"
+                size="xl" 
+                message="📱 Gostaria de ver uma demonstração completa da IA médica Dr.AgendIA"
               >
-                Ver demonstração completa
+                📊 Ver Demonstração
               </WhatsAppButton>
             </div>
 
