@@ -53,7 +53,7 @@ export const FinalCTA = () => {
                 message="Olá! Quero automatizar meu consultório com IA. Pode me mostrar como funciona?"
               >
                 <ArrowRight className="w-5 h-5" />
-                Fale com um especialista no WhatsApp
+                  Fale com especialista
               </WhatsAppButton>
             </div>
 
