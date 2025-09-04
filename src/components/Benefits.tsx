@@ -67,7 +67,7 @@ export const Benefits = () => {
             <Shield className="w-4 h-4" />
             Tecnologia Certificada CFM
           </div> */}
-          <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
             Por que DrAgendIA é a{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
@@ -77,7 +77,7 @@ export const Benefits = () => {
             </span>{" "}
             que você esperava?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Mais agendamentos, menos tarefas manuais. Uma IA que cuida do
             atendimento para sua equipe focar no que importa.
           </p>
@@ -98,7 +98,7 @@ export const Benefits = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Badge com métrica */}
-                <div className="absolute -top-4 -right-4 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-4 py-2 rounded-2xl text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
+                <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-2 py-1 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
                   {benefit.metric}
                 </div>
 

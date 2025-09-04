@@ -7,11 +7,11 @@ export const SocialProof = () => {
     <section className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6">
             Veja nossa IA em
             <span className="text-primary"> ação</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Demonstração real de como nossa IA agenda consultas automaticamente
             via WhatsApp
           </p>
@@ -19,8 +19,8 @@ export const SocialProof = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Video Demo */}
-          <div className="flex justify-center">
-            <div className="max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
+          <div className="flex justify-center order-2 lg:order-1">
+            <div className="w-full max-w-[280px] sm:max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
               <video
                 className="w-full h-full object-contain rounded-3xl"
                 loop
@@ -33,7 +33,7 @@ export const SocialProof = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-1 lg:order-2">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Veja como funciona na prática

@@ -45,17 +45,17 @@ export const FloatingWhatsAppButton = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
       {/* Tooltip */}
       {showTooltip && (
-        <div className="absolute bottom-full right-0 mb-4 w-64 bg-card border border-border rounded-lg shadow-lg p-4 animate-fade-in">
+        <div className="absolute bottom-full right-0 mb-4 w-56 sm:w-64 bg-card border border-border rounded-lg shadow-lg p-3 sm:p-4 animate-fade-in">
           <button 
             onClick={handleCloseTooltip}
             className="absolute top-2 right-2 text-muted-foreground hover:text-foreground"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3 h-3 sm:w-4 sm:h-4" />
           </button>
-          <p className="text-sm text-card-foreground mb-2 font-medium">
+          <p className="text-xs sm:text-sm text-card-foreground mb-2 font-medium">
             💡 Automatize seu consultório agora!
           </p>
           <p className="text-xs text-muted-foreground">
@@ -71,12 +71,12 @@ export const FloatingWhatsAppButton = () => {
         size="lg"
         variant="whatsapp"
         className={cn(
-          "w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300",
+          "w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300",
           "animate-pulse hover:animate-none hover:scale-110",
           "group relative overflow-hidden"
         )}
       >
-        <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />
+        <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
         
         {/* Notification badge */}
         <span className="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full animate-ping"></span>

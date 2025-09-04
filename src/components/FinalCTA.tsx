@@ -8,18 +8,18 @@ export const FinalCTA = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main headline */}
           <div className="mb-12">
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6">
               Pare de perder pacientes e 
               <span className="text-primary"> automatize agora</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8">
               Cada dia sem automação é dinheiro perdido. Comece hoje mesmo e veja 
               a diferença em 24 horas.
             </p>
           </div>
 
           {/* Benefits reminder */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-12">
             {[
               { text: "70% menos faltas", subtext: "Comprovado" },
               { text: "Implementação personalizada", subtext: "Entendemos seu processo" },
