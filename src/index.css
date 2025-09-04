@@ -19,41 +19,41 @@ All colors MUST be HSL.
     --popover-foreground: 15 23 42;
 
     /* Primary - Navy escuro da paleta (extrema esquerda) */
-    --primary: 220 26 14; /* Navy escuro da imagem */
+    --primary: 220 100 15; /* Navy escuro profundo */
     --primary-foreground: 255 255 255; /* Texto branco */
-    --primary-glow: 200 95 39; /* Azul médio para destaques */
+    --primary-glow: 215 100 45; /* Azul médio para destaques */
 
     /* Secondary - Azul médio da paleta */
-    --secondary: 200 95 39; /* Azul médio da paleta */
+    --secondary: 210 100 50; /* Azul médio vibrante */
     --secondary-foreground: 255 255 255; /* Texto branco */
 
-    --muted: 220 13 18; /* Cinza azulado claro da paleta */
-    --muted-foreground: 215 16 47; /* Cinza médio */
+    --muted: 210 20 85; /* Cinza claro neutro */
+    --muted-foreground: 210 10 40; /* Cinza médio */
 
     /* Accent - Cyan/turquesa claro da paleta */
-    --accent: 187 85 53; /* Cyan claro da paleta */
+    --accent: 190 100 65; /* Cyan vibrante */
     --accent-foreground: 15 23 42; /* Texto escuro */
 
     --destructive: 0 84 60; /* Vermelho para erros */
     --destructive-foreground: 255 255 255; /* Texto branco */
 
-    --border: 220 13 91; /* Borda sutil */
-    --input: 220 13 91; /* Borda de input */
-    --ring: 220 26 14; /* Anel de foco - navy */
+    --border: 210 25 85; /* Borda sutil azul claro */
+    --input: 210 25 85; /* Borda de input */
+    --ring: 220 100 15; /* Anel de foco - navy */
 
-    --success: 142 76 36; /* Verde de sucesso */
+    --success: 120 100 40; /* Verde de sucesso */
     --success-foreground: 255 255 255; /* Texto branco */
 
-    --whatsapp: 122 70 49; /* Verde WhatsApp original #25D366 */
+    --whatsapp: 122 39 49; /* Verde WhatsApp original #25D366 */
     --whatsapp-foreground: 255 255 255; /* Texto branco */
 
     /* Gradientes da nova paleta */
-    --gradient-hero: linear-gradient(135deg, hsl(220 26 14), hsl(200 95 39), hsl(187 85 53));
-    --gradient-cta: linear-gradient(135deg, hsl(122 70 49), hsl(142 76 36));
-    --gradient-primary: linear-gradient(135deg, hsl(220 26 14), hsl(200 95 39));
-    --shadow-elegant: 0 10px 30px -10px hsl(220 26 14 / 0.25);
-    --shadow-glow: 0 0 40px hsl(122 70 49 / 0.3);
-    --shadow-cta: 0 8px 25px -8px hsl(122 70 49 / 0.4);
+    --gradient-hero: linear-gradient(135deg, hsl(220 100 15), hsl(210 100 50), hsl(190 100 65));
+    --gradient-cta: linear-gradient(135deg, hsl(122 39 49), hsl(120 100 40));
+    --gradient-primary: linear-gradient(135deg, hsl(220 100 15), hsl(210 100 50));
+    --shadow-elegant: 0 10px 30px -10px hsl(220 100 15 / 0.25);
+    --shadow-glow: 0 0 40px hsl(122 39 49 / 0.3);
+    --shadow-cta: 0 8px 25px -8px hsl(122 39 49 / 0.4);
 
     --radius: 0.75rem;
 
