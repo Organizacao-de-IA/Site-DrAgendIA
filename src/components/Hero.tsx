@@ -14,7 +14,7 @@ export const Hero = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
                 Agendamentos médicos automáticos com
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   {" "}
@@ -22,7 +22,7 @@ export const Hero = () => {
                 </span>{" "}
                 especializada via WhatsApp
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed">
                 Dr AgendIA automatiza o agendamento de consultas da sua clínica
                 ou consultório usando inteligência artificial no WhatsApp. Mais
                 agilidade, menos faltas e sem sobrecarregar sua equipe.
@@ -64,7 +64,7 @@ export const Hero = () => {
             </div>
 
             {/* Trust indicators */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pt-4">
+            <div className="flex items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <Bot className="w-5 h-5 text-primary" />
                 <span className="text-sm text-muted-foreground">
@@ -98,9 +98,8 @@ export const Hero = () => {
             </div>
 
             {/* Floating elements */}
-            <div className="absolute top-2 right-2 sm:top-0 sm:right-0 bg-success text-success-foreground px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
-              <span className="hidden sm:inline">Alto volume de agendamentos</span>
-              <span className="sm:hidden">Alto volume</span>
+            <div className="absolute -top-4 -right-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Alto volume de agendamentos
             </div>
             {/* <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               IA Médica Exclusiva
