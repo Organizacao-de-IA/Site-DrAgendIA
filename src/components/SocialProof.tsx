@@ -4,14 +4,14 @@ import { Play, Star } from "lucide-react";
 
 export const SocialProof = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-background to-muted/50">
+    <section className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-6xl font-black text-foreground mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
             Veja nossa IA em
-            <span className="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text"> ação</span>
+            <span className="text-primary"> ação</span>
           </h2>
-          <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto font-medium">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Demonstração real de como nossa IA agenda consultas automaticamente
             via WhatsApp
           </p>
@@ -54,8 +54,8 @@ export const SocialProof = () => {
                 "Envio de lembretes personalizados",
               ].map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-gradient-to-r from-primary to-accent rounded-full shadow-sm"></div>
-                  <span className="text-foreground font-medium">{feature}</span>
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-foreground">{feature}</span>
                 </div>
               ))}
             </div>

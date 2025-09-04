@@ -8,52 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Paleta correta baseada na imagem fornecida */
-    --background: 248 250 252; /* Fundo claro e limpo */
-    --foreground: 15 23 42; /* Texto escuro navy */
+    --background: 0 0% 100%;
+    --foreground: 200 15% 25%;
 
-    --card: 255 255 255; /* Cards brancos limpos */
-    --card-foreground: 15 23 42; /* Texto escuro nos cards */
+    --card: 210 100% 99%;
+    --card-foreground: 200 15% 25%;
 
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 15% 25%;
 
-    /* Primary - Navy escuro da paleta (extrema esquerda) */
-    --primary: 220 26 14; /* Navy escuro da imagem */
-    --primary-foreground: 255 255 255; /* Texto branco */
-    --primary-glow: 200 95 39; /* Azul médio para destaques */
+    --primary: 195 100% 34%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 194 36% 52%;
 
-    /* Secondary - Azul médio da paleta */
-    --secondary: 200 95 39; /* Azul médio da paleta */
-    --secondary-foreground: 255 255 255; /* Texto branco */
+    --secondary: 194 19% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 13 18; /* Cinza azulado claro da paleta */
-    --muted-foreground: 215 16 47; /* Cinza médio */
+    --muted: 40 20% 97%;
+    --muted-foreground: 200 10% 45%;
 
-    /* Accent - Cyan/turquesa claro da paleta */
-    --accent: 187 85 53; /* Cyan claro da paleta */
-    --accent-foreground: 15 23 42; /* Texto escuro */
+    --accent: 45 100% 51%;
+    --accent-foreground: 200 15% 25%;
 
-    --destructive: 0 84 60; /* Vermelho para erros */
-    --destructive-foreground: 255 255 255; /* Texto branco */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 220 13 91; /* Borda sutil */
-    --input: 220 13 91; /* Borda de input */
-    --ring: 220 26 14; /* Anel de foco - navy */
+    --border: 194 36% 52%;
+    --input: 40 20% 97%;
+    --ring: 195 100% 34%;
 
-    --success: 142 76 36; /* Verde de sucesso */
-    --success-foreground: 255 255 255; /* Texto branco */
+    --success: 142 71% 45%;
+    --success-foreground: 210 40% 98%;
 
-    --whatsapp: 122 70 49; /* Verde WhatsApp original #25D366 */
-    --whatsapp-foreground: 255 255 255; /* Texto branco */
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 210 40% 98%;
 
-    /* Gradientes da nova paleta */
-    --gradient-hero: linear-gradient(135deg, hsl(220 26 14), hsl(200 95 39), hsl(187 85 53));
-    --gradient-cta: linear-gradient(135deg, hsl(122 70 49), hsl(142 76 36));
-    --gradient-primary: linear-gradient(135deg, hsl(220 26 14), hsl(200 95 39));
-    --shadow-elegant: 0 10px 30px -10px hsl(220 26 14 / 0.25);
-    --shadow-glow: 0 0 40px hsl(122 70 49 / 0.3);
-    --shadow-cta: 0 8px 25px -8px hsl(122 70 49 / 0.4);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--accent)), hsl(45 100% 60%));
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.3);
 
     --radius: 0.75rem;
 
