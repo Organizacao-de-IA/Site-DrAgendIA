@@ -112,6 +112,10 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
+
+  /* Ensure media scales on small screens */
+  img, video { max-width: 100%; height: auto; }
+
 }
