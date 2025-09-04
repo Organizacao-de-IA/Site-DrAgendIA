@@ -7,6 +7,7 @@ interface WhatsAppButtonProps {
   variant?: "whatsapp" | "cta" | "hero";
   size?: "default" | "lg" | "xl";
   children: React.ReactNode;
+  className?: string; 
 }
 
 export const WhatsAppButton = ({ 

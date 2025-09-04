@@ -1,28 +1,28 @@
-import { Card } from "@/components/ui/card";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { Play, Star } from "lucide-react";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 export const SocialProof = () => {
   return (
-    <section className="py-20 bg-secondary/50">
+    <section className="py-16 sm:py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6">
+        {/* Título */}
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Veja nossa IA em
             <span className="text-primary"> ação</span>
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
             Demonstração real de como nossa IA agenda consultas automaticamente
             via WhatsApp
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* Video Demo */}
-          <div className="flex justify-center order-2 lg:order-1">
-            <div className="w-full max-w-[280px] sm:max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
+        {/* Grid principal */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Vídeo */}
+          <div className="flex justify-center order-1 lg:order-1">
+            <div className="w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
               <video
-                className="w-full h-full object-contain rounded-3xl"
+                className="w-full h-auto object-contain rounded-3xl"
                 loop
                 muted
                 controls
@@ -32,65 +32,53 @@ export const SocialProof = () => {
             </div>
           </div>
 
-          {/* Content */}
-          <div className="space-y-8 order-1 lg:order-2">
+          {/* Conteúdo */}
+          <div className="space-y-6 sm:space-y-8 order-2 lg:order-2 text-center lg:text-left">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
                 Veja como funciona na prática
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                 Esta demonstração mostra uma conversa real entre um paciente e
                 nossa IA. Veja como o agendamento acontece de forma natural e
                 eficiente.
               </p>
             </div>
 
-            {/* Key features highlighted */}
-            <div className="space-y-4">
+            {/* Lista de benefícios */}
+            <div className="space-y-3 sm:space-y-4">
               {[
                 "Conversa 100% natural e humanizada",
                 "Integração em tempo real com a agenda",
                 "Confirmação automática do agendamento",
                 "Envio de lembretes personalizados",
               ].map((feature, index) => (
-                <div key={index} className="flex items-center gap-3">
+                <div
+                  key={index}
+                  className="flex items-center gap-3 justify-center lg:justify-start"
+                >
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">{feature}</span>
+                  <span className="text-sm sm:text-base text-foreground">
+                    {feature}
+                  </span>
                 </div>
               ))}
             </div>
 
-            {/* Testimonial */}
-            {/* <Card className="p-6 bg-primary/5 border-primary/20">
-              <div className="flex items-center gap-1 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
-              </div>
-              <blockquote className="text-foreground italic mb-3">
-                "Em 2 semanas nossa taxa de no-show caiu de 30% para 8%. 
-                A IA é tão natural que os pacientes nem percebem que não é uma pessoa real."
-              </blockquote>
-              <cite className="text-muted-foreground font-medium">
-                Dr. Roberto Silva - Cardiologista
-              </cite>
-            </Card> */}
-
             {/* CTA */}
             <div className="pt-4">
-              <div className="flex justify-center sm:justify-start w-full px-4 sm:px-0">
-                <div className="w-full sm:w-fit">
-                  <WhatsAppButton
-                    variant="cta"
-                    size="xl"
-                    message="Olá! Vi a demonstração e quero implementar essa automação no meu consultório"
-                  >
-                    Automatize seu consultório agora!
-                  </WhatsAppButton>
-                </div>
+              <div className="flex justify-center lg:justify-start">
+                <WhatsAppButton
+                  variant="cta"
+                  size="xl"
+                  className="w-full sm:w-auto"
+                  message="Olá! Vi a demonstração e quero implementar essa automação no meu consultório"
+                >
+                  Automatize seu consultório agora!
+                </WhatsAppButton>
               </div>
 
-              <p className="text-sm text-muted-foreground mt-3 text-center sm:text-left">
+              <p className="text-xs sm:text-sm text-muted-foreground mt-3 text-center lg:text-left">
                 Demonstração gratuita • Setup em 24h • Sem compromisso
               </p>
             </div>
