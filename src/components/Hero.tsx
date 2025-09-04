@@ -98,7 +98,7 @@ export const Hero = () => {
             </div>
 
             {/* Floating elements */}
-            <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-success text-success-foreground px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
+            <div className="absolute top-2 right-2 sm:top-0 sm:right-0 bg-success text-success-foreground px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
               <span className="hidden sm:inline">Alto volume de agendamentos</span>
               <span className="sm:hidden">Alto volume</span>
             </div>

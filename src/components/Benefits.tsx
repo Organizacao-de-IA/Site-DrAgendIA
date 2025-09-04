@@ -98,7 +98,7 @@ export const Benefits = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Badge com métrica */}
-                <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-2 py-1 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
+                <div className="absolute top-2 right-2 sm:top-0 sm:right-0 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-2 py-1 sm:px-3 sm:py-2 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
                   {benefit.metric}
                 </div>
 

@@ -5,14 +5,14 @@ export const FinalCTA = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center px-2 sm:px-0">
           {/* Main headline */}
           <div className="mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground mb-6 px-2">
               Pare de perder pacientes e 
               <span className="text-primary"> automatize agora</span>
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 px-2">
               Cada dia sem automação é dinheiro perdido. Comece hoje mesmo e veja 
               a diferença em 24 horas.
             </p>

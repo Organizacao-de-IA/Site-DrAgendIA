@@ -17,15 +17,16 @@ export const SocialProof = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
           {/* Video Demo */}
-          <div className="flex justify-center order-2 lg:order-1">
-            <div className="w-full max-w-[280px] sm:max-w-[300px] rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
+          <div className="flex justify-center order-2 lg:order-1 px-4 lg:px-0">
+            <div className="w-full max-w-[280px] sm:max-w-[320px] mx-auto rounded-[2rem] overflow-hidden shadow-xl border border-muted bg-black">
               <video
-                className="w-full h-full object-contain rounded-3xl"
+                className="w-full h-auto object-contain rounded-3xl"
                 loop
                 muted
                 controls
+                style={{ minHeight: '400px' }}
               >
                 <source src="/demo.mp4" type="video/mp4" />
               </video>
@@ -78,8 +79,8 @@ export const SocialProof = () => {
 
             {/* CTA */}
             <div className="pt-4">
-              <div className="flex justify-center sm:justify-start w-full px-4 sm:px-0">
-                <div className="w-full sm:w-fit">
+              <div className="flex justify-center lg:justify-start w-full">
+                <div className="w-full max-w-md lg:w-fit mx-auto lg:mx-0">
                   <WhatsAppButton
                     variant="cta"
                     size="xl"
@@ -90,7 +91,7 @@ export const SocialProof = () => {
                 </div>
               </div>
 
-              <p className="text-sm text-muted-foreground mt-3 text-center sm:text-left">
+              <p className="text-sm text-muted-foreground mt-3 text-center lg:text-left">
                 Demonstração gratuita • Setup em 24h • Sem compromisso
               </p>
             </div>
