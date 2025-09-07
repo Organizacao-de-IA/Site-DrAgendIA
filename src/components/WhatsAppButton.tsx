@@ -7,27 +7,27 @@ interface WhatsAppButtonProps {
   variant?: "whatsapp" | "cta" | "hero";
   size?: "default" | "lg" | "xl";
   children: React.ReactNode;
-  className?: string; 
+  className?: string;
 }
 
-export const WhatsAppButton = ({ 
-  message = "Olá! Gostaria de saber mais sobre a automação médica com IA.", 
-  phoneNumber = "551195400056",
+export const WhatsAppButton = ({
+  message = "Olá! Gostaria de saber mais sobre a automação médica com IA.",
+  phoneNumber = "5511943782092",
   variant = "whatsapp",
   size = "lg",
-  children 
+  children,
 }: WhatsAppButtonProps) => {
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   const handleClick = () => {
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
-    <Button 
-      variant={variant} 
-      size={size} 
+    <Button
+      variant={variant}
+      size={size}
       onClick={handleClick}
       className="group w-full sm:w-auto"
     >

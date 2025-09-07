@@ -13,7 +13,7 @@ export const FloatingWhatsAppButton = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    
+
     // Show tooltip after 3 seconds
     const tooltipTimer = setTimeout(() => {
       setShowTooltip(true);
@@ -32,10 +32,12 @@ export const FloatingWhatsAppButton = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Vi seu site e gostaria de automatizar meu consultório com IA. Podem me ajudar?");
-    const phoneNumber = "551195400056";
+    const message = encodeURIComponent(
+      "Olá! Vi seu site e gostaria de automatizar meu consultório com IA. Podem me ajudar?"
+    );
+    const phoneNumber = "5511943782092";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
   };
 
   const handleCloseTooltip = () => {
@@ -49,7 +51,7 @@ export const FloatingWhatsAppButton = () => {
       {/* Tooltip */}
       {showTooltip && (
         <div className="absolute bottom-full right-0 mb-4 w-56 sm:w-64 bg-card border border-border rounded-lg shadow-lg p-3 sm:p-4 animate-fade-in">
-          <button 
+          <button
             onClick={handleCloseTooltip}
             className="absolute top-2 right-2 text-muted-foreground hover:text-foreground"
           >
@@ -59,7 +61,8 @@ export const FloatingWhatsAppButton = () => {
             💡 Automatize seu consultório agora!
           </p>
           <p className="text-xs text-muted-foreground">
-            Fale conosco e descubra como nossa IA pode revolucionar seus agendamentos.
+            Fale conosco e descubra como nossa IA pode revolucionar seus
+            agendamentos.
           </p>
           <div className="absolute bottom-0 right-4 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-border translate-y-full"></div>
         </div>
@@ -77,7 +80,7 @@ export const FloatingWhatsAppButton = () => {
         )}
       >
         <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
-        
+
         {/* Notification badge */}
         <span className="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full animate-ping"></span>
         <span className="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full"></span>
