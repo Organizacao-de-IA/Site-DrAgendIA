@@ -42,6 +42,13 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button 
+              onClick={() => scrollToSection("socialProof")}
+              className="text-muted-foreground hover:text-foreground transition-colors relative group"
+            >
+              Funcionamento
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
+            </button>
+            <button 
               onClick={() => scrollToSection("benefits")}
               className="text-muted-foreground hover:text-foreground transition-colors relative group"
             >
@@ -53,13 +60,6 @@ export const Header = () => {
               className="text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               Como Funciona
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection("socialProof")}
-              className="text-muted-foreground hover:text-foreground transition-colors relative group"
-            >
-              Funcionamento
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all group-hover:w-full"></span>
             </button>
           </nav>
